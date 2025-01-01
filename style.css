@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Audiowide&family=Delicious+Handrawn&family=Indie+Flower&family=Orbitron:wght@400..900&family=Saira+Stencil+One&family=Shadows+Into+Light+Two&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Silkscreen:wght@400;700&family=Sriracha&family=Tangerine:wght@400;700&family=The+Girl+Next+Door&display=swap');
+
+:root {
+    --black: #111111;
+    --white: #fcfcd0;
+    --white2: #dfdfb7;
+
+}
+
+body {
+    font-family: "Sriracha", serif;
+    font-weight: 400;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#piano {
+    background-color: white;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-areas: "do re mi fa sol la si do_ re_ l";
+    align-items: center;
+
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.tile {
+    text-align: center;
+
+    background-color: var(--white);
+    padding: 1rem;
+    border: 0.1rem solid var(--black);
+}
+
+form {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "label input";
+    align-items: center;
+    margin: 0 1rem;
+}
+
+form label {
+    grid-area: label;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.input-range {
+    grid-area: input;
+
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+/* LA BOULE QUI PERMET DE CHOISIR */
+.input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--black);
+}
+

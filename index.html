@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><text x='0' y='25' font-size='25'>🎹</text></svg>" type="image/svg+xml">
+    <title>Piano project</title>
+</head>
+<body>
+    <h1>Piano project</h1>
+    <p>Play with this piano by <u>clicking</u> the tiles on the screen or using <u>"Q" to "M" keys</u> !
+         Have fun !
+    </p>
+    <form>
+        <label for="note">Choose how high the note will be:</label>
+        <input type="range" class="input-range" id="note" min="0" max ="8000">
+    </form>
+    <div class="container" id="piano"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
+<script src="script.js"></script>
+</html>
